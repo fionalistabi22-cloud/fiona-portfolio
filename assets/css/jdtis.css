@@ -300,7 +300,8 @@
         max-width: 720px;
     }
 
-    .case-study-card-grid {
+    .case-study-card-grid,
+    .jtdis-gallery-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
@@ -328,6 +329,7 @@
     }
 
     .case-study-card-grid,
+    .jtdis-gallery-grid,
     .module-list,
     .technical-grid,
     .learning-list {
@@ -347,4 +349,175 @@
     .case-study-footer-actions .button {
         width: 100%;
     }
+
+    .lightbox-container {
+        padding: 1rem;
+        max-width: 95vw;
+    }
+}
+
+/* ==========================================
+   JTDIS Screenshot Gallery & Lightbox Styles
+   ========================================== */
+
+.jtdis-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+}
+
+.jtdis-gallery-card {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0.75rem;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    box-shadow: 0 10px 24px rgb(23 32 42 / 5%);
+    cursor: pointer;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.jtdis-gallery-card:hover,
+.jtdis-gallery-card:focus-visible {
+    border-color: var(--color-accent);
+    box-shadow: 0 14px 30px rgb(23 32 42 / 12%);
+    transform: translateY(-2px);
+    outline: none;
+}
+
+.jtdis-gallery-img-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background-color: #eef5f6;
+    border-radius: 4px;
+}
+
+.jtdis-gallery-img-wrapper img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    transition: transform 0.3s ease;
+}
+
+.jtdis-gallery-card:hover .jtdis-gallery-img-wrapper img {
+    transform: scale(1.03);
+}
+
+.jtdis-gallery-caption {
+    margin-top: 0.75rem;
+    padding: 0.25rem 0.25rem 0;
+    color: var(--color-accent-dark);
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Lightbox Modal */
+.lightbox-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.lightbox-modal.is-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.lightbox-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(4px);
+}
+
+.lightbox-container {
+    position: relative;
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90vw;
+    max-height: 90vh;
+    padding: 1.5rem;
+    background-color: var(--color-surface);
+    border-radius: 12px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
+}
+
+.lightbox-modal.is-open .lightbox-container {
+    transform: scale(1);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    color: var(--color-muted);
+    font-size: 1.5rem;
+    line-height: 1;
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.lightbox-close:hover,
+.lightbox-close:focus-visible {
+    color: var(--color-accent-dark);
+    background-color: #eef5f6;
+    outline: none;
+}
+
+.lightbox-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    max-height: calc(90vh - 3rem);
+}
+
+.lightbox-img {
+    display: block;
+    max-width: 100%;
+    max-height: calc(80vh - 4rem);
+    height: auto;
+    object-fit: contain;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.lightbox-caption {
+    margin: 1rem 0 0;
+    color: var(--color-accent-dark);
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-align: center;
 }

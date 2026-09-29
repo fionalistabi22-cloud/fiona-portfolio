@@ -350,10 +350,132 @@
             </div>
         </section>
 
+        <section class="hp-section hp-section-muted" aria-labelledby="screenshots-title">
+            <div class="container">
+                <div class="hp-section-heading hp-heading-wide">
+                    <p class="section-kicker">13</p>
+                    <h2 id="screenshots-title">HPRMS System Screenshots</h2>
+                    <p class="hp-heading-description">System interface and feature screenshots from the Hidden Paradise Papar Resort Management System.</p>
+                </div>
+
+                <div class="hp-gallery-grid">
+                    <figure class="hp-gallery-card" data-lightbox="../assets/images/hprms-about.jpg" data-caption="About Hidden Paradise">
+                        <div class="hp-gallery-img-wrapper">
+                            <img src="../assets/images/hprms-about.jpg" alt="About Hidden Paradise - HPRMS" loading="lazy">
+                        </div>
+                        <figcaption class="hp-gallery-caption">About Hidden Paradise</figcaption>
+                    </figure>
+
+                    <figure class="hp-gallery-card" data-lightbox="../assets/images/hprms-activiti.jpg" data-caption="Activities">
+                        <div class="hp-gallery-img-wrapper">
+                            <img src="../assets/images/hprms-activiti.jpg" alt="Activities - HPRMS" loading="lazy">
+                        </div>
+                        <figcaption class="hp-gallery-caption">Activities</figcaption>
+                    </figure>
+
+                    <figure class="hp-gallery-card" data-lightbox="../assets/images/hprms-admindashboard.png" data-caption="Admin Dashboard">
+                        <div class="hp-gallery-img-wrapper">
+                            <img src="../assets/images/hprms-admindashboard.png" alt="Admin Dashboard - HPRMS" loading="lazy">
+                        </div>
+                        <figcaption class="hp-gallery-caption">Admin Dashboard</figcaption>
+                    </figure>
+
+                    <figure class="hp-gallery-card" data-lightbox="../assets/images/hprms-entryticket.jpg" data-caption="Entry Ticket">
+                        <div class="hp-gallery-img-wrapper">
+                            <img src="../assets/images/hprms-entryticket.jpg" alt="Entry Ticket - HPRMS" loading="lazy">
+                        </div>
+                        <figcaption class="hp-gallery-caption">Entry Ticket</figcaption>
+                    </figure>
+
+                    <figure class="hp-gallery-card" data-lightbox="../assets/images/hprms-event.jpg" data-caption="Events">
+                        <div class="hp-gallery-img-wrapper">
+                            <img src="../assets/images/hprms-event.jpg" alt="Events - HPRMS" loading="lazy">
+                        </div>
+                        <figcaption class="hp-gallery-caption">Events</figcaption>
+                    </figure>
+
+                    <figure class="hp-gallery-card" data-lightbox="../assets/images/hprms-feedback.jpg" data-caption="Feedback">
+                        <div class="hp-gallery-img-wrapper">
+                            <img src="../assets/images/hprms-feedback.jpg" alt="Feedback - HPRMS" loading="lazy">
+                        </div>
+                        <figcaption class="hp-gallery-caption">Feedback</figcaption>
+                    </figure>
+
+                    <figure class="hp-gallery-card" data-lightbox="../assets/images/hprms-gallery.jpg" data-caption="Gallery">
+                        <div class="hp-gallery-img-wrapper">
+                            <img src="../assets/images/hprms-gallery.jpg" alt="Gallery - HPRMS" loading="lazy">
+                        </div>
+                        <figcaption class="hp-gallery-caption">Gallery</figcaption>
+                    </figure>
+
+                    <figure class="hp-gallery-card" data-lightbox="../assets/images/hprms-home.jpg" data-caption="Home">
+                        <div class="hp-gallery-img-wrapper">
+                            <img src="../assets/images/hprms-home.jpg" alt="Home - HPRMS" loading="lazy">
+                        </div>
+                        <figcaption class="hp-gallery-caption">Home</figcaption>
+                    </figure>
+
+                    <figure class="hp-gallery-card" data-lightbox="../assets/images/hprms-login.jpg" data-caption="Login">
+                        <div class="hp-gallery-img-wrapper">
+                            <img src="../assets/images/hprms-login.jpg" alt="Login - HPRMS" loading="lazy">
+                        </div>
+                        <figcaption class="hp-gallery-caption">Login</figcaption>
+                    </figure>
+
+                    <figure class="hp-gallery-card" data-lightbox="../assets/images/hprms-myticket.png" data-caption="My Ticket">
+                        <div class="hp-gallery-img-wrapper">
+                            <img src="../assets/images/hprms-myticket.png" alt="My Ticket - HPRMS" loading="lazy">
+                        </div>
+                        <figcaption class="hp-gallery-caption">My Ticket</figcaption>
+                    </figure>
+
+                    <figure class="hp-gallery-card" data-lightbox="../assets/images/hprms-profile.jpg" data-caption="Profile">
+                        <div class="hp-gallery-img-wrapper">
+                            <img src="../assets/images/hprms-profile.jpg" alt="Profile - HPRMS" loading="lazy">
+                        </div>
+                        <figcaption class="hp-gallery-caption">Profile</figcaption>
+                    </figure>
+
+                    <figure class="hp-gallery-card" data-lightbox="../assets/images/hprms-register.jpg" data-caption="Register">
+                        <div class="hp-gallery-img-wrapper">
+                            <img src="../assets/images/hprms-register.jpg" alt="Register - HPRMS" loading="lazy">
+                        </div>
+                        <figcaption class="hp-gallery-caption">Register</figcaption>
+                    </figure>
+
+                    <figure class="hp-gallery-card" data-lightbox="../assets/images/hprms-room.jpg" data-caption="Room">
+                        <div class="hp-gallery-img-wrapper">
+                            <img src="../assets/images/hprms-room.jpg" alt="Room - HPRMS" loading="lazy">
+                        </div>
+                        <figcaption class="hp-gallery-caption">Room</figcaption>
+                    </figure>
+
+                    <figure class="hp-gallery-card" data-lightbox="../assets/images/hprms-salesreport.jpg" data-caption="Sales Report">
+                        <div class="hp-gallery-img-wrapper">
+                            <img src="../assets/images/hprms-salesreport.jpg" alt="Sales Report - HPRMS" loading="lazy">
+                        </div>
+                        <figcaption class="hp-gallery-caption">Sales Report</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox-modal" class="lightbox-modal" aria-hidden="true" role="dialog" aria-label="Image preview">
+            <div class="lightbox-overlay"></div>
+            <div class="lightbox-container">
+                <button type="button" class="lightbox-close" aria-label="Close image preview">&times;</button>
+                <div class="lightbox-body">
+                    <img id="lightbox-img" class="lightbox-img" src="" alt="">
+                    <p id="lightbox-caption" class="lightbox-caption"></p>
+                </div>
+            </div>
+        </div>
+
         <section class="hp-footer" aria-labelledby="next-step-title">
             <div class="container hp-footer-inner">
                 <div>
-                    <p class="section-kicker">13</p>
+                    <p class="section-kicker">14</p>
                     <h2 id="next-step-title">Continue Exploring</h2>
                 </div>
                 <div class="hp-footer-actions">

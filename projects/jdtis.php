@@ -225,10 +225,90 @@
             </div>
         </section>
 
+        <section class="case-study-section case-study-section-muted" aria-labelledby="screenshots-title">
+            <div class="container">
+                <div class="case-study-section-heading case-study-section-heading-wide">
+                    <p class="section-kicker">10</p>
+                    <h2 id="screenshots-title">JTDIS System Screenshots</h2>
+                    <p>System interface and user role module screenshots from the JTDIS Asset Management System.</p>
+                </div>
+
+                <div class="jtdis-gallery-grid">
+                    <figure class="jtdis-gallery-card" data-lightbox="../assets/images/jtdi-login.png" data-caption="Login">
+                        <div class="jtdis-gallery-img-wrapper">
+                            <img src="../assets/images/jtdi-login.png" alt="Login - JTDIS Asset Management System" loading="lazy">
+                        </div>
+                        <figcaption class="jtdis-gallery-caption">Login</figcaption>
+                    </figure>
+
+                    <figure class="jtdis-gallery-card" data-lightbox="../assets/images/jtdi-superAdmin.jpg" data-caption="Super Admin Dashboard">
+                        <div class="jtdis-gallery-img-wrapper">
+                            <img src="../assets/images/jtdi-superAdmin.jpg" alt="Super Admin Dashboard - JTDIS Asset Management System" loading="lazy">
+                        </div>
+                        <figcaption class="jtdis-gallery-caption">Super Admin Dashboard</figcaption>
+                    </figure>
+
+                    <figure class="jtdis-gallery-card" data-lightbox="../assets/images/jtdi-juruteknik.jpg" data-caption="Juruteknik">
+                        <div class="jtdis-gallery-img-wrapper">
+                            <img src="../assets/images/jtdi-juruteknik.jpg" alt="Juruteknik - JTDIS Asset Management System" loading="lazy">
+                        </div>
+                        <figcaption class="jtdis-gallery-caption">Juruteknik</figcaption>
+                    </figure>
+
+                    <figure class="jtdis-gallery-card" data-lightbox="../assets/images/jtdi-ajenit.png" data-caption="Agen IT">
+                        <div class="jtdis-gallery-img-wrapper">
+                            <img src="../assets/images/jtdi-ajenit.png" alt="Agen IT - JTDIS Asset Management System" loading="lazy">
+                        </div>
+                        <figcaption class="jtdis-gallery-caption">Agen IT</figcaption>
+                    </figure>
+
+                    <figure class="jtdis-gallery-card" data-lightbox="../assets/images/jtdi-pptm.jpg" data-caption="PPTM">
+                        <div class="jtdis-gallery-img-wrapper">
+                            <img src="../assets/images/jtdi-pptm.jpg" alt="PPTM - JTDIS Asset Management System" loading="lazy">
+                        </div>
+                        <figcaption class="jtdis-gallery-caption">PPTM</figcaption>
+                    </figure>
+
+                    <figure class="jtdis-gallery-card" data-lightbox="../assets/images/jtdi-kw.jpg" data-caption="Ketua Wilayah">
+                        <div class="jtdis-gallery-img-wrapper">
+                            <img src="../assets/images/jtdi-kw.jpg" alt="Ketua Wilayah - JTDIS Asset Management System" loading="lazy">
+                        </div>
+                        <figcaption class="jtdis-gallery-caption">Ketua Wilayah</figcaption>
+                    </figure>
+
+                    <figure class="jtdis-gallery-card" data-lightbox="../assets/images/jtdi-kb.jpg" data-caption="Ketua Bahagian">
+                        <div class="jtdis-gallery-img-wrapper">
+                            <img src="../assets/images/jtdi-kb.jpg" alt="Ketua Bahagian - JTDIS Asset Management System" loading="lazy">
+                        </div>
+                        <figcaption class="jtdis-gallery-caption">Ketua Bahagian</figcaption>
+                    </figure>
+
+                    <figure class="jtdis-gallery-card" data-lightbox="../assets/images/jtdi-pengarah.jpg" data-caption="Pengarah">
+                        <div class="jtdis-gallery-img-wrapper">
+                            <img src="../assets/images/jtdi-pengarah.jpg" alt="Pengarah - JTDIS Asset Management System" loading="lazy">
+                        </div>
+                        <figcaption class="jtdis-gallery-caption">Pengarah</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox-modal" class="lightbox-modal" aria-hidden="true" role="dialog" aria-label="Image preview">
+            <div class="lightbox-overlay"></div>
+            <div class="lightbox-container">
+                <button type="button" class="lightbox-close" aria-label="Close image preview">&times;</button>
+                <div class="lightbox-body">
+                    <img id="lightbox-img" class="lightbox-img" src="" alt="">
+                    <p id="lightbox-caption" class="lightbox-caption"></p>
+                </div>
+            </div>
+        </div>
+
         <section class="case-study-footer" aria-labelledby="next-step-title">
             <div class="container case-study-footer-inner">
                 <div>
-                    <p class="section-kicker">10</p>
+                    <p class="section-kicker">11</p>
                     <h2 id="next-step-title">Continue Exploring</h2>
                 </div>
                 <div class="case-study-footer-actions">

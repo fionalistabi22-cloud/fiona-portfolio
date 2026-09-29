@@ -108,7 +108,11 @@
                     </div>
 
                     <figure class="about-portrait">
-                        <img src="assets/images/una-transparent.png" alt="Portrait of Fiona Lista Nivie">
+                        <div class="about-slideshow">
+                            <img class="slideshow-img active" src="assets/images/fiona-1.jpeg" alt="Portrait of Fiona Lista Nivie">
+                            <img class="slideshow-img" src="assets/images/fiona-2.jpeg" alt="Portrait of Fiona Lista Nivie">
+                            <img class="slideshow-img" src="assets/images/fiona-3.jpeg" alt="Portrait of Fiona Lista Nivie">
+                        </div>
                     </figure>
                 </div>
 
@@ -281,65 +285,7 @@
                         </div>
                     </article>
 
-                    <article class="project-card">
-                        <div class="project-card-content">
-                            <p class="project-type">Academic / Machine Learning Project</p>
-                            <h3 class="project-title">Bot-IoT Intrusion Detection System</h3>
-                            <p class="project-description">
-                                A machine learning-based intrusion detection project using the Bot-IoT dataset to classify network traffic and identify potential malicious activity.
-                            </p>
 
-                            <div class="project-tech" aria-label="Technologies used">
-                                <span class="project-tech-item">Python</span>
-                                <span class="project-tech-item">Pandas</span>
-                                <span class="project-tech-item">Scikit-learn</span>
-                                <span class="project-tech-item">SMOTE</span>
-                                <span class="project-tech-item">Decision Tree</span>
-                            </div>
-
-                            <h4 class="project-features-title">Key contributions</h4>
-                            <ul class="project-features">
-                                <li>Data preprocessing and analysis.</li>
-                                <li>Applied SMOTE to address class imbalance.</li>
-                                <li>Implemented Decision Tree classification.</li>
-                                <li>Compared Decision Tree criteria including Gini and Entropy.</li>
-                                <li>Evaluated model performance.</li>
-                            </ul>
-                        </div>
-
-                        <div class="project-actions">
-                            <a class="button button-primary" href="projects/bot-iot.php">View Case Study</a>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-card-content">
-                            <p class="project-type">Academic Group Project</p>
-                            <h3 class="project-title">Restaurant Ordering Record Management System</h3>
-                            <p class="project-description">
-                                An Android-based restaurant ordering management application developed to support order records and administrative reporting.
-                            </p>
-
-                            <p class="project-role"><strong>My role:</strong> Admin Dashboard &amp; Reporting</p>
-
-                            <div class="project-tech" aria-label="Technologies used">
-                                <span class="project-tech-item">Kotlin</span>
-                                <span class="project-tech-item">Android Studio</span>
-                            </div>
-
-                            <h4 class="project-features-title">Key contributions</h4>
-                            <ul class="project-features">
-                                <li>Worked on the Admin Dashboard.</li>
-                                <li>Implemented reporting-related functionality.</li>
-                                <li>Supported order record management.</li>
-                                <li>Worked within a team-based software development environment.</li>
-                            </ul>
-                        </div>
-
-                        <div class="project-actions">
-                            <a class="button button-primary" href="projects/restaurant-ordering.php">View Case Study</a>
-                        </div>
-                    </article>
                 </div>
             </div>
         </section>
@@ -512,17 +458,7 @@
                                     <p class="education-project-type">Final Year Project</p>
                                     <p>PHP, MySQL, HTML5, CSS3, JavaScript, XAMPP</p>
                                 </article>
-                                <article class="education-project-card">
-                                    <h5>Bot-IoT Intrusion Detection System</h5>
-                                    <p class="education-project-type">Machine Learning / Academic Project</p>
-                                    <p>Python, Pandas, Scikit-learn, SMOTE, Decision Tree</p>
-                                </article>
-                                <article class="education-project-card">
-                                    <h5>Restaurant Ordering Record Management System</h5>
-                                    <p class="education-project-type">Android / Academic Group Project</p>
-                                    <p>Kotlin, Android Studio</p>
-                                    <p><strong>My role:</strong> Admin Dashboard &amp; Reporting</p>
-                                </article>
+
                             </div>
                         </div>
                     </div>

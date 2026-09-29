@@ -18,6 +18,24 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // ==========================================
+    // About Section: Automatic Portrait Slideshow
+    // ==========================================
+    const slideshowContainer = document.querySelector('.about-slideshow');
+    if (slideshowContainer) {
+        const slides = slideshowContainer.querySelectorAll('.slideshow-img');
+        if (slides.length > 1) {
+            let currentIndex = 0;
+            const slideInterval = 4000; // 4 seconds
+
+            setInterval(function () {
+                slides[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % slides.length;
+                slides[currentIndex].classList.add('active');
+            }, slideInterval);
+        }
+    }
+
+    // ==========================================
     // Hero Section: Interactive 3D Parallax & Particle Canvas
     // ==========================================
     const heroSection = document.querySelector('.hero');
@@ -139,5 +157,69 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         requestAnimationFrame(animateParallax);
+    }
+
+    // ==========================================
+    // JTDIS Case Study: Lightbox Modal
+    // ==========================================
+    const lightboxModal = document.getElementById('lightbox-modal');
+    if (lightboxModal) {
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+        const closeBtn = lightboxModal.querySelector('.lightbox-close');
+        const overlay = lightboxModal.querySelector('.lightbox-overlay');
+        const galleryCards = document.querySelectorAll('.jtdis-gallery-card, .hp-gallery-card');
+
+        function openLightbox(imgSrc, captionText) {
+            lightboxImg.src = imgSrc;
+            lightboxImg.alt = captionText;
+            lightboxCaption.textContent = captionText;
+            lightboxModal.classList.add('is-open');
+            lightboxModal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            lightboxModal.classList.remove('is-open');
+            lightboxModal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+            setTimeout(function () {
+                lightboxImg.src = '';
+                lightboxImg.alt = '';
+                lightboxCaption.textContent = '';
+            }, 300);
+        }
+
+        galleryCards.forEach(function (card) {
+            card.addEventListener('click', function () {
+                const imgSrc = card.getAttribute('data-lightbox');
+                const captionText = card.getAttribute('data-caption');
+                if (imgSrc) {
+                    openLightbox(imgSrc, captionText);
+                }
+            });
+
+            card.setAttribute('tabindex', '0');
+            card.addEventListener('keydown', function (e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    card.click();
+                }
+            });
+        });
+
+        if (closeBtn) {
+            closeBtn.addEventListener('click', closeLightbox);
+        }
+
+        if (overlay) {
+            overlay.addEventListener('click', closeLightbox);
+        }
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && lightboxModal.classList.contains('is-open')) {
+                closeLightbox();
+            }
+        });
     }
 });
