@@ -24,9 +24,26 @@
         height: 140px;
     }
 
-    .orb-ring-1 { width: 190px; height: 190px; top: -25px; left: -25px; }
-    .orb-ring-2 { width: 170px; height: 170px; top: -15px; left: -15px; }
-    .orb-ring-3 { width: 210px; height: 210px; top: -35px; left: -35px; }
+    .orb-ring-1 {
+        width: 190px;
+        height: 190px;
+        top: -25px;
+        left: -25px;
+    }
+
+    .orb-ring-2 {
+        width: 170px;
+        height: 170px;
+        top: -15px;
+        left: -15px;
+    }
+
+    .orb-ring-3 {
+        width: 210px;
+        height: 210px;
+        top: -35px;
+        left: -35px;
+    }
 
     .hero-panel {
         max-width: 560px;
@@ -190,17 +207,66 @@
         height: 110px;
     }
 
-    .orb-ring-1 { width: 150px; height: 150px; top: -20px; left: -20px; }
-    .orb-ring-2 { width: 130px; height: 130px; top: -10px; left: -10px; }
-    .orb-ring-3 { width: 165px; height: 165px; top: -27px; left: -27px; }
+    .orb-ring-1 {
+        width: 150px;
+        height: 150px;
+        top: -20px;
+        left: -20px;
+    }
 
-    .float-code { font-size: 0.8rem; padding: 0.35rem 0.65rem; top: 5%; left: 2%; }
-    .float-brackets { font-size: 0.9rem; padding: 0.3rem 0.6rem; bottom: 5%; right: 2%; }
-    .badge-php { font-size: 0.75rem; padding: 0.3rem 0.7rem; top: 12%; right: 2%; }
-    .badge-ai { font-size: 0.75rem; padding: 0.3rem 0.7rem; bottom: 12%; left: 2%; }
-    .badge-qa { display: none; }
-    .shape-cube { display: none; }
-    .shape-dots { display: none; }
+    .orb-ring-2 {
+        width: 130px;
+        height: 130px;
+        top: -10px;
+        left: -10px;
+    }
+
+    .orb-ring-3 {
+        width: 165px;
+        height: 165px;
+        top: -27px;
+        left: -27px;
+    }
+
+    .float-code {
+        font-size: 0.8rem;
+        padding: 0.35rem 0.65rem;
+        top: 5%;
+        left: 2%;
+    }
+
+    .float-brackets {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.6rem;
+        bottom: 5%;
+        right: 2%;
+    }
+
+    .badge-php {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.7rem;
+        top: 12%;
+        right: 2%;
+    }
+
+    .badge-ai {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.7rem;
+        bottom: 12%;
+        left: 2%;
+    }
+
+    .badge-qa {
+        display: none;
+    }
+
+    .shape-cube {
+        display: none;
+    }
+
+    .shape-dots {
+        display: none;
+    }
 
     .hero-panel {
         padding: 1.25rem 1.5rem;
@@ -359,4 +425,18 @@
     .site-logo {
         font-size: 1rem;
     }
+}
+
+.about-slideshow {
+    position: relative;
+    overflow: hidden;
+}
+
+.about-portrait .about-slideshow .slideshow-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

@@ -262,7 +262,7 @@ a {
     inset: 0;
     border-radius: 50%;
     background: radial-gradient(circle at 35% 30%, #5ce1e6 0%, #176b87 50%, #0d4d63 90%);
-    box-shadow: 
+    box-shadow:
         0 15px 35px rgba(23, 107, 135, 0.35),
         inset -8px -8px 20px rgba(13, 77, 99, 0.85),
         inset 8px 8px 18px rgba(255, 255, 255, 0.65);
@@ -420,12 +420,30 @@ a {
     border: 1px solid rgba(23, 107, 135, 0.4);
 }
 
-.cube-face.front  { transform: translateZ(12px); }
-.cube-face.back   { transform: rotateY(180deg) translateZ(12px); }
-.cube-face.right  { transform: rotateY(90deg) translateZ(12px); }
-.cube-face.left   { transform: rotateY(-90deg) translateZ(12px); }
-.cube-face.top    { transform: rotateX(90deg) translateZ(12px); background: rgba(100, 223, 223, 0.3); }
-.cube-face.bottom { transform: rotateX(-90deg) translateZ(12px); }
+.cube-face.front {
+    transform: translateZ(12px);
+}
+
+.cube-face.back {
+    transform: rotateY(180deg) translateZ(12px);
+}
+
+.cube-face.right {
+    transform: rotateY(90deg) translateZ(12px);
+}
+
+.cube-face.left {
+    transform: rotateY(-90deg) translateZ(12px);
+}
+
+.cube-face.top {
+    transform: rotateX(90deg) translateZ(12px);
+    background: rgba(100, 223, 223, 0.3);
+}
+
+.cube-face.bottom {
+    transform: rotateX(-90deg) translateZ(12px);
+}
 
 .shape-ring {
     top: 14%;
@@ -508,50 +526,81 @@ a {
     0% {
         transform: translate3d(0, 0, 0) rotate(0deg);
     }
+
     100% {
         transform: translate3d(0, -16px, 20px) rotate(3deg);
     }
 }
 
 @keyframes orbCorePulse {
-    0% { opacity: 0.5; transform: scale(0.9); }
-    100% { opacity: 0.95; transform: scale(1.1); }
+    0% {
+        opacity: 0.5;
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 0.95;
+        transform: scale(1.1);
+    }
 }
 
 @keyframes orbSpin1 {
-    0% { transform: rotateX(72deg) rotateY(18deg) rotateZ(0deg); }
-    100% { transform: rotateX(72deg) rotateY(18deg) rotateZ(360deg); }
+    0% {
+        transform: rotateX(72deg) rotateY(18deg) rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateX(72deg) rotateY(18deg) rotateZ(360deg);
+    }
 }
 
 @keyframes orbSpin2 {
-    0% { transform: rotateX(45deg) rotateY(-30deg) rotateZ(0deg); }
-    100% { transform: rotateX(45deg) rotateY(-30deg) rotateZ(360deg); }
+    0% {
+        transform: rotateX(45deg) rotateY(-30deg) rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateX(45deg) rotateY(-30deg) rotateZ(360deg);
+    }
 }
 
 @keyframes orbSpin3 {
-    0% { transform: rotateX(60deg) rotateY(60deg) rotateZ(0deg); }
-    100% { transform: rotateX(60deg) rotateY(60deg) rotateZ(360deg); }
+    0% {
+        transform: rotateX(60deg) rotateY(60deg) rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateX(60deg) rotateY(60deg) rotateZ(360deg);
+    }
 }
 
 @keyframes floatElement {
     0% {
         transform: translate3d(0, 0, 0) rotate(0deg);
     }
+
     50% {
         transform: translate3d(0, -10px, 12px) rotate(3deg);
     }
+
     100% {
         transform: translate3d(0, 4px, 0) rotate(-2deg);
     }
 }
 
 @keyframes rotateCube {
-    0% { transform: rotateX(-20deg) rotateY(0deg); }
-    100% { transform: rotateX(-20deg) rotateY(360deg); }
+    0% {
+        transform: rotateX(-20deg) rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateX(-20deg) rotateY(360deg);
+    }
 }
 
 /* Accessibility: Prefers Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
+
     .hero-orb-wrapper,
     .orb-ring,
     .orb-core,
@@ -1700,4 +1749,29 @@ a {
 .footer-social {
     padding-top: 0.85rem;
     border-top: 1px solid rgb(220 236 239 / 30%);
+}
+
+@media (max-width: 768px) {
+    .about-slideshow {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 2 / 3;
+        overflow: hidden;
+    }
+
+    .about-slideshow .slideshow-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        opacity: 0;
+        display: block;
+    }
+
+    .about-slideshow .slideshow-img.active {
+        opacity: 1;
+    }
 }
